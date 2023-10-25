@@ -1,6 +1,10 @@
 <?php
+include_once 'koneksi.php';
 include_once 'top.php';
 include_once 'menu.php';
+include_once 'models/jenis_produk.php';
+include_once 'models/kartu.php';
+include_once 'models/produk.php';
 ?>
     <div class="container-fluid px-4">
         <div>
