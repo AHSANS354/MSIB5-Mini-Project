@@ -1,7 +1,6 @@
 <?php
 $model = new Jenis_produk();
 $data_jenisProduk = $model->datajenis();
-if($sesi['role'] != 'staff'){
 ?>
 <main>
                     <div class="container-fluid px-4">
@@ -44,7 +43,3 @@ if($sesi['role'] != 'staff'){
                         </div>
                     </div>
                 </main>
-                <?php } else {
-                    ?>
-                    <h1 align="center">HALAMAN KOSONG</h1>
-                <?php } ?>
