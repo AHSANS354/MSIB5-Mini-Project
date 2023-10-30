@@ -64,7 +64,7 @@ if(isset($member)){
                                                     <a href="index.php?url=produk_detail&id=<?= $row['id'] ?>">
                                                         <button type="button" class='btn btn-sm btn-primary'>Detail</button>
                                                     </a>
-                                                    <a href="index.php?url=produk_form&idedit=<?= $row['id'] ?>">
+                                                    <a href="index.php?url=produk_form&id=<?= $row['id'] ?>">
                                                         <button type="button" class="btn btn-sm btn-warning">Ubah</button>
                                                     </a>
                                                     <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" onclick="return confirm('Anda Yakin Akan Menghapus <?= $row['nama'] ?>?')">

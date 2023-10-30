@@ -16,7 +16,7 @@ if(isset($member)){
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">
-                                <a href="index.php?url=produk_form">
+                                <a href="index.php?url=create_produk">
                                     <button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;Tambah</button>
                                 </a>
                             </div>
@@ -64,7 +64,7 @@ if(isset($member)){
                                                     <a href="index.php?url=produk_detail&id=<?= $row['id'] ?>">
                                                         <button type="button" class='btn btn-sm btn-primary'>Detail</button>
                                                     </a>
-                                                    <a href="index.php?url=produk_form&idedit=<?= $row['id'] ?>">
+                                                    <a href="index.php?url=create_produk&id=<?= $row['id'] ?>">
                                                         <button type="button" class="btn btn-sm btn-warning">Ubah</button>
                                                     </a>
                                                     <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" onclick="return confirm('Anda Yakin Akan Menghapus <?= $row['nama'] ?>?')">

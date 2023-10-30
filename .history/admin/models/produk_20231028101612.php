@@ -27,7 +27,7 @@ class Produk{
         $ps->execute($data);
     }
     public function ubah($data){
-        $sql = "UPDATE produk set kode = ?, nama = ?, harga_beli = ?, harga_jual = ?, stok = ?, min_stok = ?, jenis_produk_id = ? WHERE id = ?";
+        $sql = "UPDATE produk set kode = ?, nama = ?, harga_beli = ?, harga_jual = ?, stok = ?, min_stok = ?, jenis_produk_id = ?";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute($data);
     }

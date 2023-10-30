@@ -16,7 +16,7 @@ if(isset($member)){
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">
-                                <a href="index.php?url=produk_form">
+                                <a href="index.php?url=create_produk">
                                     <button class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;Tambah</button>
                                 </a>
                             </div>
@@ -60,17 +60,13 @@ if(isset($member)){
                                             <td><?= $row['min_stok']?></td>
                                             <td><?= $row['jenis']?></td>
                                             <td>
-                                                <form action="produk_controller.php" method="POST">
+                                                <form>
                                                     <a href="index.php?url=produk_detail&id=<?= $row['id'] ?>">
                                                         <button type="button" class='btn btn-sm btn-primary'>Detail</button>
                                                     </a>
-                                                    <a href="index.php?url=produk_form&idedit=<?= $row['id'] ?>">
+                                                    <a href="index.php?url=produk_form&id=<?= $row['id'] ?>">
                                                         <button type="button" class="btn btn-sm btn-warning">Ubah</button>
                                                     </a>
-                                                    <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" onclick="return confirm('Anda Yakin Akan Menghapus <?= $row['nama'] ?>?')">
-                                                        Hapus
-                                                    </button>
-                                                    <input type="hidden" name="idx" value="<?= $row['id'] ?>">
                                                 </form>
                                             </td>
                                         </tr>
